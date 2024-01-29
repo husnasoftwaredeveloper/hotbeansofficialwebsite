@@ -1,0 +1,326 @@
+<html>
+<head>
+     <!-- Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot-Beans</title>
+   <!-- Style Sheet Tags -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!--Script Tags -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+   <!-- Header -->
+  <nav>
+    <ul>
+      <li class='logo'><span>H</span>ot <span>B</span>eans
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <img width="50" height="50" src="https://img.icons8.com/stitch/50/red-beans-.png" alt="red beans" /></li>
+      <li class='btn'><span class="fas fa-bars"></span></li>
+      <div class='items'>
+        <li><a href='#home-page' data-after='Home'>Home</a></li>
+        <li><a href='#staff-page' data-after='Staff'>Staff</a></li>
+        <li><a href='#job-page' data-after='Job-Spec' >Jobs-Spec</a></li>
+        <li><a href='#form-page' data-afer='Registration Form'>Registration Form</a </li>
+        <li><a href='#courses' data-after='Courses'>Courses</a></li>
+      </div>
+      <li class='search-icon'>
+        <input class='search-bar' type='search' placeholder='Search...'>
+        <label class='icon'>
+          <span class="fas fa-search"></span>
+        </label>
+      </li>
+    </ul>
+  </nav>
+  <!--End of header-->
+   <!--Banner Part-->
+  <div class= 'banner-container'>
+      <div class= 'banner-items'>
+        <h1>Welcome to the Hot Beans Company Website</h1>
+        <button id= 'dark-mode' onclick = 'darkLightMode()'>Canya Mode</button>
+        <button id= 'light-mode'  onclick = 'darkLightMode()'>Light Mode</button>
+      </div>
+  </div>
+  <!--End of Banner Part-->
+    <!--Company Itself Part-->
+  <section id= 'home-page'>
+    <div class='content-start' style= 'display: flex; text-align: center; justify-content: center;  margin-top: 5%;''>
+       <h1 class= 'intro-heading'>Let's see the History and Purpose of Hot Beans Company<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet"></h1><img  width="28" height="28" src="https://img.icons8.com/color/48/quote-right.png" alt="quote-right"/> 
+    </div>
+      <div id= 'hp-container'>
+    <div class= 'history-wrapper'>
+      <img src= 'hot beannns.jpeg' class='history-img'>
+      <div class= 'history-items'>
+        <h2>Hot Beans History</h2>
+        <p>Hot beans website was created in 2010. The author and creater of the Hot Beans company is Philip Heinz. Philip Heinz has a passione for web developement. The name Hot Beans came from Philip surname 'Heinz'. In 2013, Philip moved his business from a small office in Chobam to a big office in Farnbourough business Park, which allowed him to expand his 'Hot Beans Web Developement 
+ Business'. He also increased his number of clients. Now in 2023, the company Hot Beans provide the best services in web developement for other companies. We are always looking for passionate web developers that are looking for an exciting career and are able to express creative ideas.
+        </p>
+      </div>
+    </div>
+     <div class= 'purpose-wrapper'>
+        <img src= "employeeeè.jpeg" class= 'purpose-img'>
+        <div class= 'purpose-items'>
+          <h2>Hot Beans Purpose</h2>
+          <p>Hot Beans has a purpose to develope the website for everyone. Hot Beans wants to offer jobs to those who are interested in Web Developement. Hot Beans also offers job to those, who currently wants to learn full stack web developement. We pride ourselves on our excellent customer services and our ability to produce the highest quality websites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!--End of Company Itself Part-->
+   <!--Start of Staff Page-->
+  <section id= 'staff-page'>
+    <div class= 'staff'>
+    <div class = 'staff-intro' style= 'display: flex; text-align: center; justify-content: center; margin-top:10%'>
+      <h1 class= 'staff-heading' id='heading2'>Meet the Hot Beans Staff</h1><img width="28" height="28" src="https://img.icons8.com/color-glass/48/conference-background-selected.png" alt="conference-background-selected"/>
+    </div>
+    <div class= 'staff'>
+    <div class= 'staff-container''>
+      <div class= 'slider-wrapper'>
+    <div id="slider">  
+    <div class="slide" style="background:dodgerBlue;">
+
+      <img src="staff-anim.jpg" class= 'img'>
+    </div>
+
+    <div class="slide" style="background:coral;">
+       <img class= 'img' src="staff-page.jpg"  >
+    </div>
+    <div class="slide" style="background:crimson;">
+      <img class= 'img'src="web developer.jpg" >
+    </div>
+    <div class="slide" style="background:crimson;">
+      <img class= 'img' src="stafffffff.jpg" width= '100%'>
+    </div>
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fas fa-arrow-left" aria-hidden="true"></i>
+    </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </span>
+    </div>
+    <div id="dots-con">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+    <p>Hot Beans have an amazing team of developers that are always work brilliantly, 
+      they built really impressive and necessary work in the past. And still express their creative ideas and corporate fully with the company. We would like to introduce some of our best staff of the Company.
+      </p>
+         <hr class= 'bottom-line'>
+        <h2>Web Developers and Management Team</h2>
+    </div>
+    </div>
+        <div id= 'employer-container'>
+      <div class= 'employees-container'>
+        <div class= 'staff-card'>
+          <div class= 'imgbox'>
+            <img src= 'employe-one.jpg' height= '300px' width= '400px'>
+            </div>
+              <div class= 'staff-content'>
+                <h2>Philip Heinz</h2>
+                <p><b>Philip Heinz </b>is the CEO of the Hot Beans Company. His role in the Hot Beans is as the backbone of the company.As from the history, Hot Beans became the sunshine in business society as Philip had started to run the company in 2011. Philip is the charger of the company and mostly the shareholder of Hot Beans. Thanks to Heinz that always support the Hot Beans name, without Heinz Hot Beans wouldn’t be exist.</p>
+        </div>
+        </div>
+        <div class= 'staff-card'>
+          <div class= 'imgbox'>
+            <img src= 'employe-two.jpg' height= '300px' width= '400px'>
+            </div>
+              <div class= 'staff-content'>
+                <h2>Salar Sikandar</h2>
+                <p><b>Salar Sikandar </b> is one of the main and integral worker in the company. He has worked with us since 2015 and he always impressed the company by doing outstanding hard work on any projects. He works with many client on various projects, and has a gentle and polite manner. Salar is the driving force and without him, Hot Beans will not be able to produce the epitomize and incredible content.</p>
+        </div>
+        </div>
+        <div class= 'staff-card'>
+          <div class= 'imgbox'>
+            <img src= 'employeee-threee.jpeg' height= '300px' width= '400px'>
+            </div>
+              <div class= 'staff-content'>
+                <h2>Imama Hashim</h2>
+                <p><b>Imama Hashim </b>is the trainee developer and working under the Salar Sikandar. Imama is a passionate and a curious web developer. She has impressed company by visualising some amazing ideas that help 
+the company to become better. As Imama proved herself, she became one of the special trainee developer. She is currently working on projects with Salar, and learning how to operate the business.</p>
+        </div>
+        </div>
+        <div class= 'staff-card'>
+          <div class= 'imgbox'>
+            <img src= 'employee-four.jpg' height= '300px' width= '400px'>
+            </div>
+              <div class= 'staff-content'>
+                <h2>Emilia Luke</h2>
+                <p><b>Emilia Luke </b>is the head of all the resources in the Hot Beans and is in-charger of all the employee’s behaviour, action and work of the company. If any employee has problem in the company, they would go and discuss it with Emilia Luke. Emilia had joined the Hot Bean Company in 2014 as the developer, as she worked so hard and got the role of Head of office in Hot Beans Company. 
+                   </p>
+                  </div>
+                   </div>
+        <div class= 'staff-card'>
+          <div class= 'imgbox'>
+            <img src= 'employee-five.jpg' height= '300px' width= '400px'>
+            </div>
+              <div class= 'staff-content'>
+                <h2>Corbett Methew</h2>
+                <p><b>Methew Corbett </b>is the senior manager of the Hot Beans Company.
+                  He joined the company in 2011. Even though, He use to work with Philip since 2005.
+                  He is in-charger of the web development teams,  office floor and all the work. 
+                  The loyal and compassionate employer of the Hot Beans, and the company is grateful to have him.
+                </p>
+                  </div>
+                  </div>
+                 <div class= 'staff-card'>
+                   <div class= 'imgbox'>
+                     <img src= 'employee-six.jpg' height= '300px' width= '400px'>
+                     </div>
+                       <div class= 'staff-content'>
+                         <h2>Bella Hadeed</h2>
+      <p><b>Bella Hadid </b>is the senior secratery of the Hot Beans Company. She joined the company in 2014. She worked with Philip as a secretery.  She is a hard-worker, problem solver and a good listener. Her duty is to record the timing of the meeting and to collaobrate of the company. She also help the HR Teams and Deputy Managers as a behalf of Philip.  She is the gold for a company. 
+                        </p>
+                          </div>
+                           </div>
+                     </div>
+                     </div>
+                     </div>
+                     </section>
+       <!--End of Staff Page-->
+   <!--Start of Job Spec Page-->
+  <section id= 'job-page'>
+    <div class = 'job-intro' style= 'display: flex; text-align: center; justify-content: center; margin-top:10%'>
+      <h1 class= 'job-heading'>Job Specification</h1><img width="28" height="28" src="https://img.icons8.com/external-goofy-flat-kerismaker/96/external-CV-business-goofy-flat-kerismaker.png" alt="external-CV-business-goofy-flat-kerismaker"/>
+    </div>
+     <div class= 'job'>
+    <div class= 'job-content'>
+      <h2>Expective Qualification</h2>
+          <p>To be able to work as the trainee Web Developer. If you want to join the dynamic and exciting of the Hot Beans Company. We expected from you to have at least theses Qualifications. Which are:
+      </p>
+          <ul>
+          <li>GCSE in IT (or BTEC equivalent)</li>
+          <li>GCSE in Art (or BTEC equivalent)</li>
+          <li>Level 2 award in Creating a Website</li>
+          <li>Level 2 Certificate in Interactive Media</li>
+          <li>Level 2/3 Diploma in Creative iMedia</li>
+          <li>Level 3 Diploma in Information Technology (Specialist)</li>
+          <li>Level 3 Diploma in IT User Skills</li>
+          </ul>
+      <h3>What We Wish to have in Our Candidate</h3>
+    </div>
+        <div id= 'job-grid'>
+        <div class= 'job-card'>
+          <div class= 'only-card'>
+            <div class='cardcontainer'>
+              <img src= 'expectation.jpeg' class= 'exp' height= '500px' width= '500px'>
+            </div>
+            <div class= 'job-details'>
+              <h4>Our Expectations</h4>
+              <p>The essential characteristics of the successful Web Developer is a positive attitude and a solid baseline of technical skills and problem solving. It is crucial that the superior candidate is able to demonstrate a genuine and incredible passion for digital technology to  help the company to become successful  by expanding their passion that they have.  If you have these expective qualities, contact us, we are looking forward to meet with you.</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  </section>
+   <!--End of Job Spec Page-->
+   <!--Start of Forum Page-->
+  <section id= 'form-page'>
+    <div class = 'form-intro' style= 'display: flex; text-align: center; justify-content: center; margin-top:10; align-items: center;'>
+       <h1 class= 'form-heading'>Application Form</h1><img width="28" height="28" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-form-automation-technology-flaticons-flat-flat-icons.png" alt="external-form-automation-technology-flaticons-flat-flat-icons"/>
+    </div>
+    <div class= 'form-content'>
+    <div class= 'form-pgh'>
+      <h2>Apply Now!</h2>
+      <p>If you want to become one of the member of the Hot Beans Company. You have to fill the form. Filling the form will give us your details and your passionate message  written in a text box. Fill the form to become one of the member of Hot Beans.</p> 
+    </div>
+      <form method= 'get' action= '#'>
+        <h3>Fill your Confidential Information Here</h3>   
+        <fieldset>
+            <br><label for= 'name'>Enter your full name: <input class= 'detail' type= 'text' name= 'name' placeholder= 'Enter your name here...' required/></label></br>
+           <br><label for= 'age'>Enter your age: <input class= 'detail' type= 'number' name= 'age' placeholder= 'Your age...' min= '13' max= '120'/></label></br>
+          <br> <label for= 'gender'>Choose a Gender: 
+            <select>
+              <option value= "">(Select One)</option>
+              <option value= "1">Male</option>
+              <option value= "1">Female</option>
+              <option value= "1">Other</option>
+            </select>
+          </label></br>
+          <br><label for= 'email'>Enter your Email Address: <input class= 'detail' type='email' name= 'email' placeholder= 'Enter your email address here...' required/></label></br>
+            <br><label for= 'number'>Enter your Phone Number: <input class= 'detail' type='tel' name= 'phonenumber' placeholder= 'Enter your phone number here...' required/></label></br>
+           <br><label for = 'cv'>Upload you Cv here: <input class= 'detail' type= 'file' name='cv' required/></label></br>
+          <br><label for="bio">Message:
+             <textarea id="bio" name="bio" rows="5" cols="50"></textarea>
+           </label></br>
+          <label for="terms-and-conditions">
+             <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.oldham.ac.uk/about-oldham-college/terms-and-conditions/">terms and conditions</a>
+           </label>
+            <input type="submit" value="Submit" />
+      </fieldset>
+      </form>
+    </div>
+  </section>
+  <!--End of Form Page-->
+   <!--Start of Courses Page-->
+  <section id= 'courses'>
+    <div class = 'courses-intro' style= 'display: flex; text-align: center; justify-content: center; margin-top:10%; align-items: center;'>
+       <h1 class= 'course-heading'>Courses that Hot Beans Offer</h1><img width="28" height="28" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-courses-university-flaticons-flat-flat-icons.png" alt="external-courses-university-flaticons-flat-flat-icons"/>
+    </div>    
+    <div class= 'course-container'>
+    <div class= 'course-pgh'>
+      <h2>The Reason of Offer!</h2>
+      <p>Hot Beans offers range of web developement courses that can help every person. Who desire of learning the web developement. There are 3 different levels of web developement. If you are one of from it. Go and learn the code! Feel free and relax. Go and ready yourself for learning a code.</p>
+      <h3>Courses Levels</h3>   
+    </div>
+      <div class= 'card-body'>
+      <div class= 'cards-container'>
+        <div class= 'cards'>
+          <img src= 'BeginnerCourse (1).png'>
+          <div class= 'card-content'>
+            <h1>Beginner Courses</h1>
+            <p>Novice People in the web developement field now doesn't need to stress them self out.This course is for those, who are interesting in web developement. Here are some web developement courses links:</p>
+            <a class= 'link' href= 'https://www.codecademy.com'>CodeAcademy.com</a>
+            <a class= 'link' href= 'https://mimo.org'>mimo.org</a>
+          </div>
+      </div>
+        <div class= 'cards'>
+            <img src= 'intermediate.jpg'>
+            <div class= 'card-content'>
+              <h1>Intermediate Courses</h1>
+              <p>People who has the basic knowledge of the web developement doesn't need to quit their learning journey. There are the some links that offers the intermediate knowledge and will teach you, how to get on track again. Feel free and start your learning again.</p>
+              <a class= 'link'href= 'https://www.freecodecamp.org/'>CodeCamp.org</a>
+              <a class= 'link' href= 'https://scrimba.com/'>Scrimba.com</a>
+            </div>
+        </div>
+        <div class= 'cards'>
+            <img src= 'advanced.jpg'>
+            <div class= 'card-content'>
+              <h1>Advanced Courses</h1>
+              <p>people who have a strong understanding of web development and want to improve their skills while learning new and much more complex skills and techniques.
+               Here are some sites we like and we think you will like too.</p>
+              <a class= 'link' href= 'https://www.codewars.com/'>Codewars.com</a>
+              <a class= 'link' href= 'https://www.edx.org/learn/web-development'>eDx</a>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>  
+  <!--End of Courses Page-->
+   <!--Start of Footer Page-->
+  <footer>
+    <div class= 'footercontainer'>
+      <h1>Contact Us</h1>
+      <div class= 'footer-icons'>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class= 'copyright'>
+      <p>Copyright © 2011 Hot-Beans. All right reserved.</p>
+    </div>
+  </footer>
+   <!--End of Footer and Website is completed Here-->
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
